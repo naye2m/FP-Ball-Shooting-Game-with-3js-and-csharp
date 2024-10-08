@@ -1,0 +1,85 @@
+Common Game Data
+                                                                                                                                                                                        $
+                     Field                        Size (bits)              Range                               Description
+Type of Data                                           8                    256            Type identifier for data packets.
+Game ID                                                8                    256            Game identifier.
+Timestamp                                             32               4,294,967,296       Timestamp for the current state.
+Player ID                                             10                   1,024           Player connection or session ID.
+
+Player Data                                                                                                                                          58
+
+Basic Player Data
+
+                     Field                        Size (bits)              Range                               Description
+Health                                                 8                    256            Player health.
+Armor                                                  8                    256            Player armor level.
+Kill Count                                            12                   4,096           Number of kills.
+Assest count                                           0
+Death Count                                            9                    512            Number of deaths.
+status                                                11                   2,048           Player Status
+Player Velocity                                       24                16,777,216         Player Velocity
+Player Possition                                      24                16,777,216         Player Possition
+TimeStamp                                              0                     1             mentioned above
+Ping                                                   8                    256            Player ping (latency).
+Stamina                                                7                    128            Stamina value.
+
+Vector3D:                                                                                                                                           111
+
+                     Field                        Size (bits)              Range                               Description
+X                                                      8                    256            X-component of player velocity.
+Y                                                      8                    256            Y-component of player velocity.
+Z                                                      8                    256            Z-component of player velocity.
+
+Vector2D                                                                                                                                             24
+
+                     Field                        Size (bits)              Range                               Description
+X                                                      8                    256            X-angle of the player’s rotation.
+Y                                                      8                    256            Y-angle of the player’s rotation.
+
+Player Status (2 Bytes / 16 bits)                                                                                                                    16
+
+                     Field                        Size (bits)              Range                               Description
+Is Dead                                                1                     2             Whether the player is alive.
+Is Spectator                                           1                     2             Whether the player is a spectator.
+Is Bot                                                 1                     2             Whether the player is a bot.
+Is Sprinting                                           1                     2             Whether the player is sprinting.
+Is Crouching                                           1                     2             Whether the player is crouching.
+Is Reloading                                           1                     2             Whether the player is reloading.
+Is Grounded                                            0                     1             Whether the player is on the ground.
+Is Aiming                                              1                     2             Whether the player is aiming.
+Is Zooming                                             1                     2             Whether the player is zooming in.
+Is Walking                                             1                     2             Whether the player is walking.
+Is Running                                             1                     2             Whether the player is running.
+Is Stunned                                             1                     2             Whether the player is stunned.
+
+Is Dashing                                             0                     1             Whether the player is dashing.
+Is On Ground                                           0                     1             Whether the player is on the ground (again for fallback).
+
+Player Effects (4 Bytes / 32 bits)                                                                                                                   11
+
+                     Field                        Size (bits)              Range                               Description
+Action States                                          8                    256            bitfield of player actions (e.g., shooting, jumping).
+Power-ups                                              8                    256            Power-up state (e.g., speed boost, shield).
+Effect Duration                                        8                    256            Remaining time for the active effect (in seconds).
+Effect Intensity                                       8                    256            Intensity or strength of the effect (e.g., shield power).
+
+Extended Player Data (3 Bytes / 24 bits)                                                                                                             32
+
+                     Field                        Size (bits)              Range                               Description
+Team ID                                                8                    256            Team identifier for team-based games.
+Throwable Count                                        8                    256            Number of throwables like grenades.
+Asset Count                                            8                    256            Number of assets the player currently holds.
+
+
+Summary:
+
+                  Total Size                     Bytes (bits)              Range                               Description
+Common Game Data                                      58                                   Basic game-related data.
+Player Data                                           111                                  Contains player position, status, and key gameplay data.
+Effects                                               32                                   Tracks player effects such as power-ups and actions.
+Extended Player                                       24                                   Additional player-specific data (team, throwables).
+Total                                                    225    bits                        Total for each player update.
+Mapping bit Mask for bytes                          25                                     bitmask for all with out this (when a byte represent as 0 that byte removed in this method)
+net Total                                                 31 1/4Bytes
+                                                             3/4Bytes left to 32                                                              6bits
+                                                                                           CheckSum ^^ for divided full string bytesum by            64
