@@ -1,0 +1,4 @@
+- a string of 32 byte thats only update player’s information on server
+
+Compression Techniques:
+- escape by
