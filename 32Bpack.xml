@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>SH</Author>
+  <LastAuthor>SH</LastAuthor>
+  <Created>2024-10-08T01:08:23Z</Created>
+  <LastSaved>2024-10-08T13:17:11Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9648</WindowHeight>
+  <WindowWidth>23040</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ActiveSheet>2</ActiveSheet>
+  <FirstVisibleSheet>1</FirstVisibleSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16" ss:Name="Currency">
+   <NumberFormat
+    ss:Format="_(&quot;$&quot;* #,##0.00_);_(&quot;$&quot;* \(#,##0.00\);_(&quot;$&quot;* &quot;-&quot;??_);_(@_)"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s21">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="13.5" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s25" ss:Parent="s16">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s26" ss:Parent="s16">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,###,##0"/>
+  </Style>
+  <Style ss:ID="s27" ss:Parent="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="#,###,##0"/>
+  </Style>
+  <Style ss:ID="s28" ss:Parent="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,###,##0"/>
+  </Style>
+  <Style ss:ID="s29" ss:Parent="s16">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="#,###,##0"/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s31" ss:Parent="s16">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="#,###,##0"/>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="#\ ?/?"/>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <NumberFormat ss:Format="#\ ?/?"/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="#\ ?/?"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>9</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="69" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:AutoFitWidth="0" ss:Width="75.600000000000009"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100.8" ss:Span="1"/>
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="219.6"/>
+   <Row>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Type of Data</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Identifies type (0-255)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Game ID</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Game identifier (0-255)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Timestamp</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (2 bytes)</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Frame timestamp (0-65535)</Data></Cell>
+   </Row>
+   <Row ss:Index="6" ss:Height="18">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Player Data (Without Effects)</Data></Cell>
+   </Row>
+   <Row ss:Index="8">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player ID</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">10 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">10 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player identifier (e.g., session ID, 0-1023)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Health</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player health (0-255)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Armor level (0-255)</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Position (Vector3D)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">18 bits (6 bits each for x, y, z)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">18 bits (6 bits each for x, y, z)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player’s 3D position (scaled)</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Velocity (Vector3D)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">18 bits (6 bits each for x, y, z)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">18 bits (6 bits each for x, y, z)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player’s velocity in 3D space</Data></Cell>
+   </Row>
+   <Row ss:Height="43.199999999999996">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Perspective Angle (Vector2D)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (8 bits each for x, y)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (8 bits each for x, y)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">View angle for aiming</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Rotation Angle (Vector2D)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (8 bits each for x, y)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (8 bits each for x, y)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Rotation angle</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player Status</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (2 bytes)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">16 bits (2 bytes)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Various boolean status flags (isAlive, isRunning, etc.)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kill Count</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">12 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">12 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kill counter (0-4095)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Death Count</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">9 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">9 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Death counter (0-511)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ping</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Network latency (0-255ms)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Stamina</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">7 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">7 bits</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Stamina level (0-127)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player Team</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Team ID (0-255)</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Throwables Count</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Count of grenades or throwable items</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Assets Count</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Number of assets or equipment player has</Data></Cell>
+   </Row>
+   <Row ss:Index="25" ss:Height="18">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Effects and Actions (Player)</Data></Cell>
+   </Row>
+   <Row ss:Index="27">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Actions</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Flags for specific player actions (8 different actions)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Effects (Boosts)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Effects like speed boost, shield (buffs)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Effects Info</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits (1 byte)</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Other info like time remaining, effect strength</Data></Cell>
+   </Row>
+   <Row ss:Index="32" ss:Height="18">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Vector Types</Data></Cell>
+   </Row>
+   <Row ss:Index="34">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vector3D</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">6 bits per axis</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Used for position and velocity (18 bits total)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vector2D</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">8 bits per axis</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Used for angles (16 bits total)</Data></Cell>
+   </Row>
+   <Row ss:Index="38" ss:Height="18">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Player Status Flags (Detailed Breakdown)</Data></Cell>
+   </Row>
+   <Row ss:Index="40">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Status Flag</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isAlive</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Whether the player is alive</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isSpectator</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Whether the player is spectating</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isBot</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">AI bot status</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isSprinting</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sprinting status</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isReloading</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Reloading weapon</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isCrouching</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Crouching status</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isGrounded</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player is on the ground</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isAiming</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Aiming down sights</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isZooming</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player is zoomed in (sniper, etc.)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isWalking</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Walking state</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isRunning</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Running state</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isStunned</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player is stunned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isDashing</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dashing state</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isDead</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dead state</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnGround</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On the ground</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnWall</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player is on the wall (e.g., climbing)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnLadder</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a ladder</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnObject</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Interacting with an object</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnSlope</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player is on a slope</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnWater</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">In water</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnLedge</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a ledge</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnBridge</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a bridge</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnBuilding</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On top of a building</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnTree</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a tree</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnStair</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On stairs</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnRail</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a rail</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnPlatform</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a moving platform</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">isOnTrain</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">On a moving train</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:Formula="=SUM(R[-28]C:R[-1]C)"><Data ss:Type="Number">28</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>3</ActiveCol>
+     <RangeSelection>C4</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="32Bpack">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="130" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s20" ss:DefaultRowHeight="14.4">
+   <Column ss:StyleID="s20" ss:Width="261"/>
+   <Column ss:StyleID="s24" ss:Width="97.2"/>
+   <Column ss:StyleID="s26" ss:AutoFitWidth="0" ss:Width="154.79999999999998"/>
+   <Column ss:StyleID="s20" ss:AutoFitWidth="0" ss:Width="289.8"/>
+   <Column ss:Index="10" ss:StyleID="s20" ss:AutoFitWidth="0"
+    ss:Width="127.19999999999999"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Common Game Data</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:Index="10" ss:StyleID="s25" ss:Formula="=IMLOG2(PRODUCT(C[-7]))/8"><Data
+      ss:Type="Number">34.5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Type of Data</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Type identifier for data packets.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Game ID</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Game identifier.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Timestamp</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">4294967296</Data></Cell>
+    <Cell><Data ss:Type="String">Timestamp for the current state.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player ID</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">1024</Data></Cell>
+    <Cell><Data ss:Type="String">Player connection or session ID.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Player Data</Data></Cell>
+    <Cell ss:Index="5" ss:Formula="=SUM(R[-5]C[-3]:R[-2]C[-3])"><Data
+      ss:Type="Number">58</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Basic Player Data</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Health</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Player health.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Player armor level.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kill Count</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">4096</Data></Cell>
+    <Cell><Data ss:Type="String">Number of kills.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Assest count</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Death Count</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">512</Data></Cell>
+    <Cell><Data ss:Type="String">Number of deaths.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">status</Data></Cell>
+    <Cell ss:StyleID="s17" ss:Formula="=R[39]C[3]"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2048</Data></Cell>
+    <Cell><Data ss:Type="String">Player Status</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player Velocity</Data></Cell>
+    <Cell ss:StyleID="s17" ss:Formula="=R[13]C[3]"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">16777216</Data></Cell>
+    <Cell><Data ss:Type="String">Player Velocity</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player Possition</Data></Cell>
+    <Cell ss:StyleID="s17" ss:Formula="=R[12]C[3]"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">16777216</Data></Cell>
+    <Cell><Data ss:Type="String">Player Possition</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TimeStamp</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">mentioned above</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ping</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Player ping (latency).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Stamina</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="String">Stamina value.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Vector3D:</Data></Cell>
+    <Cell ss:Index="5" ss:Formula="=SUM(R[-12]C[-3]:R[-2]C[-3])"><Data
+      ss:Type="Number">111</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">X</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">X-component of player velocity.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Y-component of player velocity.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Z</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Z-component of player velocity.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Vector2D</Data></Cell>
+    <Cell ss:Index="5" ss:Formula="=SUM(R[-4]C[-3]:R[-2]C[-3])"><Data
+      ss:Type="Number">24</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">X</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">X-angle of the player’s rotation.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Y-angle of the player’s rotation.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Player Status (2 Bytes / 16 bits)</Data></Cell>
+    <Cell ss:Index="5" ss:Formula="=SUM(R[-3]C[-3]:R[-2]C[-3])"><Data
+      ss:Type="Number">16</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Dead</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is alive.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Spectator</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is a spectator.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Bot</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is a bot.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Sprinting</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is sprinting.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Crouching</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is crouching.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Reloading</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is reloading.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Grounded</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is on the ground.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Aiming</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is aiming.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Zooming</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is zooming in.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Walking</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is walking.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Running</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is running.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Stunned</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is stunned.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s28"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is Dashing</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is dashing.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Is On Ground</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Whether the player is on the ground (again for fallback).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Player Effects (4 Bytes / 32 bits)</Data></Cell>
+    <Cell ss:Index="5" ss:Formula="=SUM(R[-16]C[-3]:R[-2]C[-3])"><Data
+      ss:Type="Number">11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Action States</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">bitfield of player actions (e.g., shooting, jumping).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Power-ups</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Power-up state (e.g., speed boost, shield).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Effect Duration</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Remaining time for the active effect (in seconds).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Effect Intensity</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Intensity or strength of the effect (e.g., shield power).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Extended Player Data (3 Bytes / 24 bits)</Data></Cell>
+    <Cell ss:Index="5" ss:Formula="=SUM(R[-5]C[-3]:R[-2]C[-3])"><Data
+      ss:Type="Number">32</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Size (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Team ID</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Team identifier for team-based games.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Throwable Count</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Number of throwables like grenades.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Asset Count</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28" ss:Formula="=2^RC[-1]"><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="String">Number of assets the player currently holds.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05" ss:Span="1"/>
+   <Row ss:Index="74" ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Summary:</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Total Size</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Bytes (bits)</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Common Game Data</Data></Cell>
+    <Cell ss:StyleID="s17" ss:Formula="=R[-68]C[3]"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell><Data ss:Type="String">Basic game-related data.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Player Data</Data></Cell>
+    <Cell ss:StyleID="s17" ss:Formula="=R[-52]C[3]"><Data ss:Type="Number">111</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell><Data ss:Type="String">Contains player position, status, and key gameplay data.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Effects</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell><Data ss:Type="String">Tracks player effects such as power-ups and actions.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Extended Player</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell><Data ss:Type="String">Additional player-specific data (team, throwables).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Total</Data></Cell>
+    <Cell ss:StyleID="s33" ss:Formula="=SUM(R[-4]C:R[-1]C)"><Data ss:Type="Number">225</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">bits</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String"> Total for each player update.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.05">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mapping bit Mask for bytes</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell><Data ss:Type="String">bitmask for all with out this (when a byte represent as 0 that byte removed in this method)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">net Total</Data></Cell>
+    <Cell ss:StyleID="s35" ss:Formula="=(R[-2]C+R[-1]C)/8"><Data ss:Type="Number">31.25</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Bytes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s35" ss:Formula="=32-R[-1]C"><Data
+      ss:Type="Number">0.75</Data></Cell>
+    <Cell><Data ss:Type="String">Bytes left to 32</Data></Cell>
+    <Cell ss:Formula="=RC[-2]*8"><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">bits</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="4"><Data ss:Type="String">CheckSum ^^ for divided full string bytesum by</Data></Cell>
+    <Cell ss:Formula="=POWER(2,R[-1]C[-1])"><Data ss:Type="Number">64</Data></Cell>
+   </Row>
+   <Row ss:Index="95">
+    <Cell ss:MergeAcross="4" ss:MergeDown="35" ss:StyleID="s83"><Data
+      ss:Type="String">&quot;- a string of 32 byte thats only update player’s information on server&#10;&#10;Compression Techniques:&#10;- escape by&#10;&#10;-This method resurves bits. This canbe improved by resuving the multliplication of ranges. whitch will be so much more space efficiant(as expected).</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>51</Zoom>
+   <Selected/>
+   <TopRowVisible>90</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>152</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
