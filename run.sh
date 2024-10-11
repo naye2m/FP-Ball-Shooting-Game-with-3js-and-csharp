@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
+list="[vitedev|vitebuild]"
 if [ -z "$1" ]; then
     echo "Please provide a mode"
-    echo "Usage: $0 <mode>[vitedev|vitebuild]"
+    echo "Usage: $0 <mode> $list"
     exit 1
 fi
 
@@ -22,6 +23,6 @@ if [ "$1" == "vitedev" ]; then
         npx vite preview --port 5500
     fi
 else
-    echo "<mode>[$1] is not in list [vitedev|vitebuild]"
+    echo "<mode>[$1] is not in list  $list"
     exit 1
 fi
