@@ -1,0 +1,77 @@
+@import "./main.css";
+
+body {
+    overflow: hidden;
+}
+
+:root {
+    --btn-w: 70px;
+}
+
+#container {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#UIdiv {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 0.4;
+}
+
+.controlDiv {
+    rotate: 45deg;
+    position: absolute;
+}
+
+.UIbtn {
+    &::before {
+        content: attr(value);
+    }
+
+    box-sizing: border-box;
+    width: var(--btn-w);
+    font-size: 50%;
+    position: relative;
+    padding: 5%;
+    rotate: -45deg;
+    bottom: 0;
+    border: black solid 1px;
+    border-radius: 1000px;
+    aspect-ratio: 1;
+
+    &:hover {
+        opacity: 0.6;
+        background-color: lightgray;
+    }
+}
+
+.cameraMoveDiv {
+    bottom: 0;
+    right: 0;
+}
+
+.joystickDiv {
+    max-width: calc(var(--btn-w) * 2);
+    bottom: 20px;
+    left: 20px;
+
+}
+
+.otherControlsDiv {
+    bottom: 60px;
+    right: 20px;
+    rotate: -45deg;
+    .UIbtn {
+        rotate: 45deg;
+    }
+}
+
+
+@media (max-width: 600px) {
+    :root {
+        --btn-w: 50px;
+    }
+}

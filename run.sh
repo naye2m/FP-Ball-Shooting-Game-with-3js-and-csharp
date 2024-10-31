@@ -26,3 +26,4 @@ else
     echo "<mode>[$1] is not in list  $list"
     exit 1
 fi
+

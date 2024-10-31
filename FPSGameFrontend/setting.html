@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Settings</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        fieldset {
+            margin-bottom: 20px;
+        }
+        
+        legend {
+            font-weight: bold;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+     </style>
+</head>
+<body>
+    <h1>Game Settings</h1>
+
+    <form id="settingsForm">
+        <fieldset>
+            <legend>UI Settings</legend>
+
+            <label for="buttonPosition">Button Position:</label>
+            <select id="buttonPosition" name="buttonPosition">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="top">Top</option>
+                <option value="bottom">Bottom</option>
+            </select>
+
+            <label for="inputMode">Input Mode:</label>
+            <select id="inputMode" name="inputMode">
+                <option value="mouse">Mouse</option>
+                <option value="touch">Touch</option>
+                <option value="keyboard">Keyboard</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mobile Settings</legend>
+
+            <label for="mobileUIButton">Touch UI Button Position:</label>
+            <select id="mobileUIButton" name="mobileUIButton">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="top">Top</option>
+                <option value="bottom">Bottom</option>
+            </select>
+
+            <label for="mobileSensitivity">Mobile Sensitivity:</label>
+            <input type="range" id="mobileSensitivity" name="mobileSensitivity" min="1" max="10" value="5">
+        </fieldset>
+
+        <fieldset>
+            <legend>Desktop Settings</legend>
+
+            <label for="desktopControls">Desktop Controls:</label>
+            <select id="desktopControls" name="desktopControls">
+                <option value="WASD">WASD</option>
+                <option value="ArrowKeys">Arrow Keys</option>
+                <option value="Custom">Custom</option>
+            </select>
+
+            <label for="fullscreen">Auto Fullscreen:</label>
+            <input type="checkbox" id="fullscreen" name="fullscreen">
+        </fieldset>
+
+        <button type="submit">Save Settings</button>
+    </form>
+
+    <script> 
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById('settingsForm');
+        
+            // Load saved settings from localStorage when the page loads
+            const loadSettings = () => {
+                const settings = JSON.parse(localStorage.getItem('gameSettings')) || {};
+        
+                form.buttonPosition.value = settings.buttonPosition || 'right';
+                form.inputMode.value = settings.inputMode || 'mouse';
+                form.mobileUIButton.value = settings.mobileUIButton || 'bottom';
+                form.mobileSensitivity.value = settings.mobileSensitivity || 5;
+                form.desktopControls.value = settings.desktopControls || 'WASD';
+                form.fullscreen.checked = settings.fullscreen || false;
+            };
+        
+            // Save settings to localStorage when the form is submitted
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const settings = {
+                    buttonPosition: form.buttonPosition.value,
+                    inputMode: form.inputMode.value,
+                    mobileUIButton: form.mobileUIButton.value,
+                    mobileSensitivity: form.mobileSensitivity.value,
+                    desktopControls: form.desktopControls.value,
+                    fullscreen: form.fullscreen.checked,
+                };
+                localStorage.setItem('gameSettings', JSON.stringify(settings));
+                alert('Settings saved successfully!');
+            });
+        
+            loadSettings();
+        });
+        
+    </script>
+</body>
+</html>
